@@ -1,0 +1,29 @@
+class Program
+	{
+		public static void Main(string[] args)
+		{
+			int sayi,sonuc=1;
+			Console.WriteLine("Sayıyı girin=");
+			sayi=Convert.ToInt32(Console.ReadLine());
+			bool bolundu=false;
+			
+			for(int i=2;i<=sayi;i++)
+			{
+				for( int a=2;a<=i;a++)
+				{
+					if(i%a==0 && i!=a)
+					{
+						bolundu=true;
+					}
+				}
+				
+				if(bolundu==false)
+				Console.WriteLine(i);
+				bolundu= false;
+			}
+			Console.ReadLine();
+				
+        }
+		
+		
+		}
