@@ -1,0 +1,16 @@
+class Program
+	{
+		public static void Main(string[] args)
+		{
+		int sayı;
+    Console.Write("Sayı Giriniz=");
+    sayı = Convert.ToInt32(Console.ReadLine());  
+    if (sayı % 2 == 0) // Eğer sayı ikiye tam bölünebiliyorsa yani çift ise 
+    sayı = sayı * sayı; // Karesini al 
+    else
+    sayı = sayı * sayı * sayı; // Değilse küpünü al 
+    Console.Write("Sonuç=" + sayı);
+    Console.ReadLine();
+
+		}
+	}
