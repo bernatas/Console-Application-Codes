@@ -1,0 +1,18 @@
+class Program
+	{
+		public static void Main(string[] args)
+		{
+		    float sicaklik;
+        string durum="";
+        Console.Write("Sıcaklık değerini giriniz:");
+        sicaklik = Convert.ToSingle(Console.ReadLine());
+         if (sicaklik < 5) durum = " Hava soğuk";
+         else if(sicaklik <= 5 && sicaklik < 20) durum="Hava normal";
+         else if (sicaklik <= 20 && sicaklik < 30) durum =" Hava ılık";
+         else  durum = " Hava sıcak";
+         Console.Write(durum);
+         Console.ReadLine();
+
+
+		}
+	}
