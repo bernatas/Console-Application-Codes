@@ -1,0 +1,13 @@
+class Program
+	{
+		public static void Main(string[] args)
+		{
+			string cumle;
+            Console.Write("Cümleyi Giriniz: ");
+            cumle = Console.ReadLine();
+            string[] kelimeler = cumle.Split(' ');
+            Console.WriteLine(kelimeler.Length);
+            Console.ReadKey();
+            
+    }
+	}
